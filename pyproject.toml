@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anyagent"
+version = "0.3.0"
+description = "Local coding agent (Ollama today, any provider tomorrow) with a Claude Code-style terminal UI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["ollama>=0.5.1", "rich>=13.7", "prompt_toolkit>=3.0.43"]
+
+[project.scripts]
+anyagent = "anyagent.agent:main"
+any = "anyagent.agent:main"
+
+[tool.setuptools]
+packages = ["anyagent"]
+
+[tool.setuptools.package-data]
+anyagent = ["HARNESS.md"]
