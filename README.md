@@ -1,8 +1,6 @@
 # AnyAgent: a Claude Code-style terminal agent for local models
 
-A provider-agnostic Python coding agent with a Claude Code-like terminal experience. It talks to Ollama
-(default model `qwen3-coder:30b`), any OpenAI-compatible server (LM Studio, vLLM, llama.cpp, OpenRouter,
-OpenAI) and Anthropic. The rules it runs under live in one file: `anyagent/HARNESS.md`.
+A provider-agnostic Python coding agent with an interactive, terminal-first workflow. It supports Ollama, any OpenAI-compatible API (LM Studio, vLLM, llama.cpp, OpenRouter, OpenAI), and Anthropic. All agent behavior, tool-use policies, coding guidelines, and safety rules are defined in a single file: `anyagent/HARNESS.md`.
 
 - Streamed markdown replies, `● Read(app.py)` / `⎿ Read 42 lines` tool lines, a todo list
 - Boxed diff previews with line numbers, an arrow-key approval menu, "view full diff", batch approval
